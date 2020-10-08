@@ -1,9 +1,14 @@
 import React, {useState, useEffect} from 'react'
+import styled from 'styled-components'
+
+const ImageStyles = styled.img`
+    width: 100%;
+`
 
 const Photo = (props) => {
     return (
         <div>
-            <img src={props.data.url} alt={props.data.title}></img>
+            <ImageStyles src={props.data.url} alt={props.data.title}></ImageStyles>
         </div>
     )
 }

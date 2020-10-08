@@ -7,9 +7,9 @@ const keyFrames = keyframes`
     }
 `
 
-const HeaderLinkStyles = styled.div`
-    color: ${pr => pr.color ? pr.theme.primaryColor : null};
-    background-color: #14213d;
+const HeaderStyles = styled.header`
+    text-decoration: none;
+    background-color: ${pr => pr.bcolor ? pr.theme.backgroundColor : null};
     opacity: 0;
     animation: ${keyFrames} 0.5s ease-in-out forwards;
     display: flex;
@@ -17,15 +17,19 @@ const HeaderLinkStyles = styled.div`
     padding: 2%;
 `
 
-const Header = (props) => {
+const HeaderLinkStyles = styled.a`
+    color: ${pr => pr.color ? pr.theme.primaryColor : null};
+`
+
+const Header = () => {
     return (
         <>
-            <HeaderLinkStyles>
-                <a href='#'>Home</a>
-                <a href='#'>News</a>
-                <a href='#'>About</a>
-                <a href='#'>Downloads</a>
-            </HeaderLinkStyles>
+            <HeaderStyles >
+                <HeaderLinkStyles href='#'>Home</HeaderLinkStyles>
+                <HeaderLinkStyles href='#'>News</HeaderLinkStyles>
+                <HeaderLinkStyles href='#'>About</HeaderLinkStyles>
+                <HeaderLinkStyles href='#'>Downloads</HeaderLinkStyles>
+            </HeaderStyles>
         </>
     )
 }
