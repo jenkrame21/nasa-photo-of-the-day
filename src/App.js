@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import "./App.css";
+import React, { useState, useEffect } from 'react';
+import './App.css';
 
 import axios from 'axios';
-import Photo from "./Photo";
+import Photo from './Photo';
 import Details from './Details';
-import Header from "./Header";
+import Header from './Header';
 
 
 
@@ -25,7 +25,7 @@ function App() {
 console.log(nasaData)
 
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <Photo data={nasaData} />
       <Details data={nasaData} />
