@@ -4,6 +4,9 @@ import "./App.css";
 import axios from 'axios';
 import Photo from "./Photo";
 import Details from './Details';
+import Header from "./Header";
+
+
 
 function App() {
   const [ nasaData, setNasaData ] = useState([]);
@@ -23,12 +26,9 @@ console.log(nasaData)
 
   return (
     <div className="App">
+      <Header />
       <Photo data={nasaData} />
       <Details data={nasaData} />
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
     </div>
   );
 }
