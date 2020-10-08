@@ -12,6 +12,19 @@ const DetailsHeaderStyle = styled.h1`
     padding-bottom: 2%;
 `
 
+const DateStyles = styled.p`
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 2%;
+    margin: 0;
+`
+
+const ExplanationStyles = styled.p`
+    line-height: 2rem;
+    color: #8F8B95;
+    margin: 0;
+`
+
 const FooterStyles = styled.footer`
     color: #F3F3F3;
     font-size: 1.5rem;
@@ -23,9 +36,10 @@ const Details = (props) => {
     return (
         <>
             <DetailsStyles>
+                <h2>Photo of the Day:</h2>
                 <DetailsHeaderStyle>{props.data.title}</DetailsHeaderStyle>
-                <p>{props.data.date}</p>
-                <p>{props.data.explanation}</p>
+                <DateStyles>{props.data.date}</DateStyles>
+                <ExplanationStyles>{props.data.explanation}</ExplanationStyles>
             </DetailsStyles>
 
             <FooterStyles className="Footer">
