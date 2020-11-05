@@ -1,22 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
 
+// Styled Components
+
 const DetailsStyles = styled.div`
-    padding: 5% 20%;
+    padding: 3% 20%;
 `
 
 const DetailsHeaderStyle = styled.h1`
     color: #735D71;
     font-size: 3rem;
     margin: 0;
-    padding-bottom: 2%;
+    margin-bottom: 5%;
+    letter-spacing: 10px;
 `
 
 const DateStyles = styled.p`
     font-weight: bold;
     font-size: 1.2rem;
-    padding-bottom: 2%;
-    margin: 0;
+    margin-bottom: 5%;
+    letter-spacing: 5px;
 `
 
 const ExplanationStyles = styled.p`
@@ -30,7 +33,10 @@ const FooterStyles = styled.footer`
     font-size: 1.5rem;
     background-color: #2C3D55;
     padding: 1% 2%;
+    letter-spacing: 10px;
 `
+
+// Details Function
 
 const Details = (props) => {
     return (
@@ -38,12 +44,12 @@ const Details = (props) => {
             <DetailsStyles>
                 <h2>Photo of the Day:</h2>
                 <DetailsHeaderStyle>{props.data.title}</DetailsHeaderStyle>
-                <DateStyles>{props.data.date}</DateStyles>
+                <DateStyles>Today's Date: <br/>{props.data.date}</DateStyles>
                 <ExplanationStyles>{props.data.explanation}</ExplanationStyles>
             </DetailsStyles>
 
             <FooterStyles className="Footer">
-                <p>Copyright © {props.data.copyright}</p>
+                <p>Copyright © NASA</p>
             </FooterStyles>
         </>
     )

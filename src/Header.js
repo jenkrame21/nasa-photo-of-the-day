@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import styled, { keyframes } from 'styled-components'
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 
 const keyFrames = keyframes`
     100% {
@@ -9,7 +9,7 @@ const keyFrames = keyframes`
 
 const HeaderStyles = styled.header`
     text-decoration: none;
-    background-color: ${pr => pr.bcolor ? pr.theme.backgroundColor : null};
+    background-color: #2C3D55;
     opacity: 0;
     animation: ${keyFrames} 0.5s ease-in-out forwards;
     display: flex;
