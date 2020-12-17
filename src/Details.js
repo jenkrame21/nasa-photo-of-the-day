@@ -49,7 +49,7 @@ const Details = (props) => {
             </DetailsStyles>
 
             <FooterStyles className="Footer">
-                <p>Copyright © NASA</p>
+                <p>Copyright © NASA 2020</p>
             </FooterStyles>
         </>
     )

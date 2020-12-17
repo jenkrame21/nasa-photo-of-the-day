@@ -7,3 +7,23 @@ h2 {
   margin-top: 0;
   letter-spacing: 5px;
 }
+
+a {
+  color: #2C3D55;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 20px 50px;
+  border-radius: 12px;
+  width: 6em;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #2C3D55;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.img-div {
+  background-color: rgb(19, 19, 20);
+}
