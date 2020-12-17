@@ -16,12 +16,14 @@ a {
   border-radius: 12px;
   width: 6em;
   font-weight: bold;
+  border: 2px solid #fff;
 }
 
 a:hover {
   background-color: #2C3D55;
   border: 2px solid #fff;
   color: #fff;
+  transition: 0.4s;
 }
 
 .img-div {
